@@ -165,7 +165,7 @@ function gerarNuvens() {
     gameOver.depth = nuvem.depth;
     gameOver.depth +=1;
 
-    nuvem.lifetime = 130;
+    nuvem.lifetime = 200;
   
     grupoNuvens.add(nuvem);
   }
@@ -173,7 +173,7 @@ function gerarNuvens() {
 }
 
 function gerarObstaculos() {
-  var frequencias = [80,100,120]
+  var frequencias = [100, 110, 120, 130]
   var frequencia = random(frequencias)
   if (frameCount % frequencia ===0) {
     obstaculo = createSprite(width+20,height-30,40,60);
